@@ -1,0 +1,24 @@
+.password-area{
+    border-radius: 0;
+    border: none;
+    padding: 2px 15px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: none;
+    
+}
+.passwordCard{
+    border: none;
+    background-color: white;
+    box-shadow: 2px 2px 5px  gray;
+    overflow: hidden;
+}
+.card-title{
+    border-bottom: solid 1px tomato;
+    background-color: tomato;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+}

@@ -34,24 +34,8 @@ export class Accounts extends Component {
         this.state = {
             accounts: ACCOUNTS,
             modalShow:false,
-            value: {
-                name: ''
-            }
+            accountName: ''
         };
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
-
-    
-
-    handleSubmit(){
-        const name = this.state.value;
-        const newAcc = {
-
-            name: name
-        }
-        newAcc.id = this.state.accounts.length;
-        const newAccountsArray = this.state.accounts.concat(newAcc);
-        this.setState({accounts: newAccountsArray});
     }
 
     toggleModal(){
@@ -81,7 +65,7 @@ export class Accounts extends Component {
                 </div>
                 <div className="row">
                     <div className='col col-sm-3 mx-auto my-3'>
-                        <Button color='danger' size='lg' className="px-5"><NavLink to='/accounts-password' className="continue-button">Continue</NavLink> <i className="fa fa-arrow-right"></i></Button>
+                        <Button color='danger' size='lg' className="px-5"><NavLink to='/passwords' className="continue-button">Continue</NavLink> <i className="fa fa-arrow-right"></i></Button>
                     </div>
                 </div>
                 <div>
@@ -91,9 +75,9 @@ export class Accounts extends Component {
                         <form >
                             <label>
                             Essay:
-                            <input type="text" onChange={(event) => this.setState({value: event.target.value})} />
+                            <input type="text" name="accountName"  />
                             </label>
-                            <input type="submit" value="Submit" onClick={() => this.handleSubmit()}/>
+                            <input type="submit" value="Submit" onClick={() => this.toggleModal()}/>
                         </form>
                     </ModalBody>
                 </Modal>
