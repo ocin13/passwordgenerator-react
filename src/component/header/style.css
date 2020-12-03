@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.nav-link{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: all ease-in-out 500ms;
+}
+.nav-link:hover{
+    font-weight: 700;
+    color: black;
+}
+.brand{
+    color: rgb(116, 7, 7);
+    font-weight: 600;
+}
