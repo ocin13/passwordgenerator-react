@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 
 export default function Help() {
     return (
-        <div className="container">
+        <div className="container-fluid">
             <Breadcrumb>
                 <BreadcrumbItem><Link to="/home">Home</Link> </BreadcrumbItem>
                 <BreadcrumbItem active>Help</BreadcrumbItem>
@@ -24,40 +24,56 @@ export default function Help() {
                 </div>
             </div>
             <div className="row row-content orangeBg">
-                <div className="col-12 col-md-8">
-                    <div className="col-12 col-md-6">
-                        <Card body inverse className="help-cards">
-                            <CardTitle tag="h5">General Info</CardTitle>
-                            <CardText>basic info about hi-Eden and your data security.</CardText>
-                        </Card>
-                    </div>
-                    <div className="col-12 col-md-6">
-                        <Card body inverse className="help-cards">
-                            <CardTitle tag="h5">Get Started Info</CardTitle>
-                            <CardText>basic security information to help you to get started.</CardText>
-                        </Card>
-                    </div>
-                </div>
-                <div className="col-12 col-md-8">
-                    <div className="col-12 col-md-6">
-                        <Card body inverse className="help-cards">
-                            <CardTitle tag="h5">Why Is Free</CardTitle>
-                            <CardText>How Hi-Eden is Available free for his users.</CardText>
-                        </Card>
-                    </div>
-                    <div className="col-12 col-md-6">
-                        <Card body inverse className="help-cards">
-                            <CardTitle tag="h5">Hi-Eden Project</CardTitle>
-                            <CardText>Overview how hi-eden website got started and maintained.</CardText>
-                        </Card>
+                <div className="col-12 col-md-8  mx-auto">
+                    <div className="row">
+                        <div className="col-12 col-md-6 my-3">
+                            <Link className="link" to="/info">
+                                <Card body inverse className="help-cards">
+                                    <CardText className="help-title" tag="h5"><i className="fa fa-list"></i>  General Info</CardText>
+                                    <CardText>basic info about hi-Eden and your data security.</CardText>
+                                </Card>
+                            </Link>
+                        </div>
+                        <div className="col-12 col-md-6 my-3">
+                            <Link className="link" to="/info">
+                                <Card body inverse className="help-cards">
+                                    <CardText tag="h5" className="help-title"><i className="fa fa-rocket"></i>  Get Started Info</CardText>
+                                    <CardText>basic security information to help you to get started.</CardText>
+                                </Card>
+                            </Link>    
+                        </div>
                     </div>
                 </div>
-                <div className="col-12 col-md-8">
-                    <div className="col-12 col-md-6">
-                        <Card body inverse className="help-cards">
-                            <CardTitle tag="h5">WHi-Eden Blog</CardTitle>
-                            <CardText>useful articles pubished by Hi-eden community about the latest web security updates.</CardText>
-                        </Card>
+                <div className="col-12 col-md-8 mx-auto">
+                    <div className="row">
+                        <div className="col-12 col-md-6  my-3">
+                            <Link className="link" to="/info">
+                                <Card body inverse className="help-cards">
+                                    <CardText tag="h5" className="help-title"><i className="fa fa-dollar"></i> Why Is Free</CardText>
+                                    <CardText>How Hi-Eden is Available free for his users.</CardText>
+                                </Card>
+                            </Link>
+                        </div>
+                        <div className="col-12 col-md-6  my-3">
+                            <Link className="link" to="/info">
+                                <Card body inverse className="help-cards">
+                                    <CardText tag="h5" className="help-title"><i className="fa fa-cubes"></i>  Hi-Eden Project</CardText>
+                                    <CardText>Overview how hi-eden website got started and maintained.</CardText>
+                                </Card>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-12 col-md-8 mx-auto">
+                    <div className="row ">
+                        <div className="col-12 col-md-6  my-3">
+                            <Link className="link" to="/info">
+                                <Card body inverse className="help-cards">
+                                    <CardText tag="h5" className="help-title"><i className="fa fa-pencil"></i>    Hi-Eden Blog</CardText>
+                                    <CardText>useful articles pubished by Hi-eden community about the latest web security updates.</CardText>
+                                </Card>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>

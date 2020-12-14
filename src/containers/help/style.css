@@ -2,4 +2,29 @@
     background-color: #fff;
     border: 1px solid gray;
     color: black;
+    border-radius: 0;
+    box-shadow: 1px 1px 5px gray;
+    padding: 25px 25px;
+    transition: all ease-in-out 400ms;
+}
+.help-cards:hover{
+    box-shadow: 2px 2px 8px black;
+    cursor:pointer;
+}
+.help-cards h5,p {
+    color: black;
+    text-decoration: none;
+} 
+.orangeBg{
+    background-color: rgb(250, 157, 157);
+}
+.help-cards i{
+    background-color: black;
+    color: white;
+    padding: 7px 9px;
+    border-radius: 50%;
+}
+a:hover{
+    text-decoration: none;
+    list-style: none;
 }
