@@ -13,3 +13,10 @@
     color: rgb(116, 7, 7);
     font-weight: 600;
 }
+#toggleButton{
+    color: black;
+    font-size: 1.6em;
+}
+.navbar-site::-webkit-scrollbar-track{
+    background-color: black;
+}

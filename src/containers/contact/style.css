@@ -1,0 +1,94 @@
+.logo-lateral{
+    width: 600px;
+    height: 600px;
+    animation:animate2 5s linear infinite;
+    transform: perspective(400px) rotate(45deg,45deg)  ;
+    perspective-origin: initial;
+
+}
+@keyframes animate2 {
+    0%{
+        transform: rotateY(0deg) rotateX(0deg) perspective(400px);  
+    }
+    40%{
+        transform: rotateY(120deg) rotateX(10deg) perspective(400px);  
+    }
+    75%{
+        transform: rotateY(240deg) rotateX(40deg) perspective(400px);  
+    }
+    100%{
+        transform: rotateY(360deg) rotateX(10deg) perspective(400px);  
+    }
+}
+
+.box1{
+    position: relative;
+    bottom: 0;
+    height: 30px;
+    width: 30px;
+    transform: rotate(45deg);
+    z-index: -99;
+    font-size: 3.6EM;
+    font-weight: 900;
+}
+.circle1{
+    position: relative;
+    bottom: 0;
+    height: 30px;
+    width: 30px;
+    transform: rotate(45deg);
+    z-index: -99;
+    font-size: 3.6EM;
+    font-weight: 900;
+}
+.shape-container{
+    display: flex;
+    flex-direction: row;
+}
+.shape-container div:nth-child(1){
+    animation: animate ease-in-out 7000ms infinite;
+    transform: scale(0.9) rotate(45deg);
+}
+.shape-container div:nth-child(2){
+    animation: animate ease-in-out 7000ms infinite;
+    transform: scale(1);
+}
+.shape-container div:nth-child(3){
+    animation: animate ease-in-out 6000ms infinite;
+    transform: scale(0.7) rotate(45deg);
+}
+.shape-container div:nth-child(4){
+    animation: animate ease-in-out 8000ms infinite;
+    transform: scale(1.2);
+}
+.shape-container div:nth-child(5){
+    animation: animate ease-in-out 9000ms infinite;
+    transform: scale(1) rotate(45deg);
+}
+.shape-container div:nth-child(6){
+    animation: animate ease-in-out 5000ms infinite;
+    transform: scale(0.6);
+}
+.shape-container div:nth-child(7){
+    animation: animate ease-in-out 6000ms infinite;
+    transform: scale(1.2) rotate(45deg);
+}
+.shape-container div:nth-child(8){
+    animation: animate ease-in-out 8000ms infinite;
+    transform: scale(0.9);
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        bottom:0
+    }
+
+    95%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        bottom: 650px;
+    }
+}
