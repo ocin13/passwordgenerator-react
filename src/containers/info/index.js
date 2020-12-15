@@ -15,21 +15,21 @@ class Info extends Component {
         const generaleArticles = this.state.answers.filter(answer => answer.tag == "general",[0]);
         const generales = generaleArticles.map(answer => {
             return(
-                <ListGroupItem ><Link className="link" to={`/articles/${answer.id}`}>{answer.title}</Link></ListGroupItem>
+                <ListGroupItem ><Link className="link" to={`/info/${answer.id}`}>{answer.title}</Link></ListGroupItem>
             );
         });
 
         const startedArticles = this.state.answers.filter(answer => answer.tag == "started",[0]);
         const started = startedArticles.map(answer => {
             return(
-                <ListGroupItem ><Link className="link" to={`/articles/${answer.id}`}>{answer.title}</Link></ListGroupItem>
+                <ListGroupItem ><Link className="link" to={`/info/${answer.id}`}>{answer.title}</Link></ListGroupItem>
             );
         });
 
         const futureArticles = this.state.answers.filter(answer => answer.tag == "future",[0]);
         const future = futureArticles.map(answer => {
             return(
-                <ListGroupItem ><Link className="link" to={`/articles/${answer.id}`}>{answer.title}</Link></ListGroupItem>
+                <ListGroupItem ><Link className="link" to={`/info/${answer.id}`}>{answer.title}</Link></ListGroupItem>
             );
         });
 

@@ -58,7 +58,7 @@ export default function Help() {
                             <Link className="link" to="/info">
                                 <Card body inverse className="help-cards">
                                     <CardText tag="h5" className="help-title"><i className="fa fa-cubes"></i>  Hi-Eden Project</CardText>
-                                    <CardText>Overview how hi-eden website got started and maintained.</CardText>
+                                    <CardText>Overview how hi-eden website got started.</CardText>
                                 </Card>
                             </Link>
                         </div>

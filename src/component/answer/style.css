@@ -1,0 +1,12 @@
+.orange-line{
+    height: 5px;
+    width: 120px;
+    background-color: coral;
+}
+.answerText{
+    line-height: 50px;
+}
+.sideMenu{
+    height: 600px;
+    overflow-y: scroll;
+}

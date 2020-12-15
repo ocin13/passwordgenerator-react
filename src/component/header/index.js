@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './style.css'
 import {Navbar, NavbarBrand, NavbarToggler,NavItem,Nav,Collapse} from 'reactstrap';
-import {NavLink} from 'react-router-dom';
+import {NavLink,Link} from 'react-router-dom';
 
 class Header extends Component {
     constructor(props) {
@@ -20,7 +20,7 @@ class Header extends Component {
         return (
             <Navbar className="navbar-site" sticky="top" expand="md">
                         <div className="container">
-                            <NavbarBrand className="mr-auto brand" href="/home">Hi-eden</NavbarBrand>
+                            <NavbarBrand className="mr-auto brand"><Link to='/home'>Hi-eden</Link></NavbarBrand>
                             <NavbarToggler onClick={(event) => this.toggleNav(event)} ><i className={!this.state.isNavOpen ? "fa fa-bars" : "fa fa-times"} id="toggleButton"></i></NavbarToggler>
                             <Collapse navbar isOpen={this.state.isNavOpen}>
                                 <Nav className="ml-auto" navbar>
@@ -42,6 +42,11 @@ class Header extends Component {
                                     <NavItem>
                                         <NavLink className="nav-link" to="/info" onClick={(event) => this.toggleNav(event)}>
                                              Info
+                                        </NavLink>
+                                    </NavItem>
+                                    <NavItem >
+                                        <NavLink className="nav-link" to="/blog" onClick={(event) => this.toggleNav(event)}>
+                                             Blog
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>

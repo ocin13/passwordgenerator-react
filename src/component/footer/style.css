@@ -1,0 +1,25 @@
+ul{
+    list-style: none;
+}
+.social-list{
+    list-style: none;
+    padding: 0;
+}
+.social-list > li{
+    display: inline;
+}
+.social-list > li i{
+    font-size: 1.6em;
+    transition: all ease-in-out 400ms;
+}
+.social-list > li i:hover{
+    color: coral;
+}
+.footer-links{
+    text-decoration: none;
+    color: black;
+}
+.footer-links:hover{
+    text-decoration: none;
+    color: black;
+}

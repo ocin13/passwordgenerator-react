@@ -1,0 +1,22 @@
+.blogCard{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 1.1em;
+    box-shadow: 2px 2px 5px rgb(165, 163, 163);
+}
+.blogTitle{
+    color: black;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.blogTitle a{
+    text-decoration: none;
+    color: black;
+    transition: all ease-in-out 400ms;
+}
+.blogTitle a:hover{
+    text-decoration: none;
+    color: rgb(100, 99, 99);
+
+}

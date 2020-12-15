@@ -10,13 +10,14 @@
 .help-cards:hover{
     box-shadow: 2px 2px 8px black;
     cursor:pointer;
+    padding: 28px;
 }
 .help-cards h5,p {
     color: black;
     text-decoration: none;
 } 
 .orangeBg{
-    background-color: rgb(250, 157, 157);
+    background-color: rgb(252, 217, 217);
 }
 .help-cards i{
     background-color: black;
