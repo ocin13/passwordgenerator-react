@@ -20,3 +20,13 @@
 .navbar-site{
     background-color:rgb(255, 255, 255);;
 }
+.brandLink{
+    text-decoration: none;
+    color: brown;
+    font-weight: 600;
+    font-size: 1.6em;
+}
+.brandLink:hover{
+    text-decoration: none;
+    color: rgb(212, 99, 99);
+}
