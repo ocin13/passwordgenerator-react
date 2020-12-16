@@ -92,7 +92,7 @@ class Passwords extends Component {
         })
         return (
             <div className="container pt-5">
-                <Breadcrumb>
+                <Breadcrumb className="breadCrumb d-none d-md-block">
                     <BreadcrumbItem><NavLink to='/home'>Home</NavLink></BreadcrumbItem>
                     <BreadcrumbItem><NavLink to='/generator'>Generator</NavLink></BreadcrumbItem>
                     <BreadcrumbItem><NavLink to='/accounts'>Accounts</NavLink></BreadcrumbItem>

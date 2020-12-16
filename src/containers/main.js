@@ -18,6 +18,7 @@ import {COMMENTS} from '../shared/Comments';
 import BlogInfo from '../component/bloginfo';
 import Footer from '../component/footer';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import QuickPassword from '../component/quickpassword';
 
 export class Main extends Component {
     constructor(props){
@@ -71,6 +72,7 @@ export class Main extends Component {
                             <Route path='/contactus' component={Contact} />
                             <Route path='/accounts' render={ () => <Accounts accounts={this.state.accounts} updateAccounts={(newAcc) => this.updateAccounts(newAcc)} />}/>
                             <Route path='/passwords' render={() => <Passwords accounts={this.state.accounts} data={this.state.data}/>}/>
+                            <Route path='/quickpassword' component={QuickPassword} />
                             <Redirect to='/home' />
                         </Switch>
                     </CSSTransition>

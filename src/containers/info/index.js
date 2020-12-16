@@ -43,7 +43,7 @@ class Info extends Component {
 
         return (
             <div className="container">
-               <Breadcrumb>
+               <Breadcrumb className="breadCrumb d-none d-md-block">
                     <BreadcrumbItem><Link to='/home'>Home</Link></BreadcrumbItem>
                     <BreadcrumbItem active>Info</BreadcrumbItem>
                </Breadcrumb>

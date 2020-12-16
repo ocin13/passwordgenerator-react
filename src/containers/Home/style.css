@@ -109,3 +109,11 @@ body{
     text-decoration: none;
     color: white;
 }
+.generator-Button-2{
+    text-decoration: none;
+    color: rgb(172, 0, 0);
+}
+.generator-Button-2:hover{
+    text-decoration: none;
+    color: rgb(179, 0, 0);
+}

@@ -1,9 +1,8 @@
 .head{
     text-align: center;
 }
-h1, h5{
-    color: black;
-    text-shadow: 1px 1px black 5px;
+.head > h1 {
+  color: black;
 }
 
 .slidecontainer {

@@ -12,7 +12,7 @@ export class Answer extends Component {
         });
         return (
             <div className="container">
-                <Breadcrumb className="d-none d-md-block">
+                <Breadcrumb className="breadCrumb d-none d-md-block">
                     <BreadcrumbItem><Link to='/home'>Home</Link></BreadcrumbItem>
                     <BreadcrumbItem><Link to='/info'>Info</Link></BreadcrumbItem>
                     <BreadcrumbItem active> {this.props.answer.title}</BreadcrumbItem>

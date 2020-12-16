@@ -6,13 +6,13 @@ import {Link} from 'react-router-dom'
 export default function Help() {
     return (
         <div className="container-fluid">
-            <Breadcrumb>
+            <Breadcrumb className="breadCrumb d-none d-md-block">
                 <BreadcrumbItem><Link to="/home">Home</Link> </BreadcrumbItem>
                 <BreadcrumbItem active>Help</BreadcrumbItem>
             </Breadcrumb>
             <div className="row text-center row-content">
                 <div className="col">
-                    <h1 className="mb-4">welcome to hi-Eden help center</h1>
+                    <h1 className="mb-4 help-title">welcome to hi-Eden help center</h1>
                     <h6>find here answers for all your questions and learn new tips in how to create a secure passwords</h6>
                     <div className="col-12 col-md-8 mx-auto py-5">
                         <Form>

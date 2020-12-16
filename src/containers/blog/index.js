@@ -15,7 +15,7 @@ function Article({article}){
                                     <Link to={`/blog/${article.id}`}>{article.title}</Link>
                                 </Media>
                                 <p className="d-none d-md-block"> {article.subtitle}</p>
-                                <h6 className="mt-3"> author: {article.author} </h6>
+                                <h6 className="mt-3 d-none d-md-block"> author: {article.author} </h6>
                             </Media>
                         </Media>
     );
@@ -35,7 +35,7 @@ class Blog extends Component {
         const newArticle = this.props.articles.filter(article => article.id == +lastArticle)[0];
         return (
             <div className="container-fluid px-5 orangeBg">
-                <Breadcrumb className="d-none d-md-block">
+                <Breadcrumb className="breadCrumb d-none d-md-block">
                     <BreadcrumbItem><Link to='/home' >Home</Link></BreadcrumbItem>
                     <BreadcrumbItem>Blog</BreadcrumbItem>
                 </Breadcrumb>
@@ -48,7 +48,7 @@ class Blog extends Component {
                             transformProps={{
                                 exitTransform: 'scale(0.9) translateY(-30%)'
                             }}>
-                            <Media className="px-5 py-4 blogCard">
+                            <Media className="px-5 py-4 blogCard" id="newBlog">
                                 <Media left>
                                     <img className="img-fluid" src={newArticle.image} width="300px" height="250px" alt={newArticle.title}/>
                                 </Media>
@@ -57,7 +57,7 @@ class Blog extends Component {
                                         <Link to={`/blog/${newArticle.id}`}>{newArticle.title}</Link>
                                     </Media>
                                     <p className="d-none d-md-block"> {newArticle.subtitle}</p>
-                                    <h6 className="mt-3"> author: {newArticle.author} </h6>
+                                    <h6 className="mt-3 d-none d-md-block"> author: {newArticle.author} </h6>
                                 </Media>
                             </Media>
                         </FadeTransform>

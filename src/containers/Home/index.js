@@ -4,7 +4,7 @@ import Baner from '../../component/baner/baner';
 import Promotions from '../../component/promotions'
 import{SERVICES} from '../../shared/services';
 import './style.css';
-import {NavLink} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 
 function Panel() {
     return (
@@ -14,7 +14,7 @@ function Panel() {
             <p className="mb-5 d-none d-sm-block">create a strong multiples passwords for your accounts faster and safer</p>
             <div className="panel-button">
                 <Button className="mr-2" color="danger" size="lg"><NavLink to="/generator" className="generator-Button">Generate <span className="d-none d-sm-block">Password For Your Account</span></NavLink></Button>
-                <Button outline color="danger" size="lg">Quick Password</Button>    
+                <Button outline color="danger" size="lg"><Link to='/quickpassword' className="generator-Button-2">Quick Password</Link></Button>    
             </div>
             <div className="row shape-container">
                 <div className="box mx-5"></div>

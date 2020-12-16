@@ -28,7 +28,7 @@ export class Generator extends Component {
     render() {
         return (
             <div className="container">
-                <Breadcrumb>
+                <Breadcrumb className="breadCrumb d-none d-md-block">
                     <BreadcrumbItem><NavLink to='/home'>Home</NavLink></BreadcrumbItem>
                     <BreadcrumbItem active>Generator</BreadcrumbItem>
                 </Breadcrumb>

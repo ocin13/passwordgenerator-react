@@ -7,7 +7,7 @@ function Footer(){
         <footer className="footer-site row-content">
             <div className="container">
                 <div className="row">
-                    <div className="col-12 col-sm-2 offset-1">
+                    <div className="col-12 col-sm-2 offset-1 d-none d-md-block">
                         <h3>Links:</h3>
                         <ul className="unstyled-list">
                             <li><NavLink className="footer-links" to="/home">Home</NavLink></li>
@@ -18,7 +18,7 @@ function Footer(){
                             <li><NavLink className="footer-links" to="/contactus">contact Us</NavLink></li>
                         </ul>
                     </div>
-                    <div className="col-12 col-sm-3">
+                    <div className="col-12 col-sm-3 d-none d-md-block">
                         <h3>Help:</h3>
                         <ul>
                             <li><a className="footer-links"  href="#"><i className="fa fa-rocket"></i> Get Started</a></li>
@@ -27,7 +27,7 @@ function Footer(){
                             <li><a className="footer-links"  href="#"><i className="fa fa-android"></i> Use It On Android</a></li>
                         </ul>
                     </div>
-                    <div className="col col-sm-3">
+                    <div className="col col-sm-3 d-none d-md-block">
                     <h3>Information:</h3>
                             <ul>
                                 <li><NavLink className="footer-links" to="#"> Services</NavLink></li>

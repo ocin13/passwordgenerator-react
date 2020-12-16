@@ -5,10 +5,10 @@ import './style.css'
 
 function Contact(){
     return(
-        <React.Fragment>
+        <div className="container">
                 <div className="row">
                     <div className="col">
-                        <Breadcrumb>
+                        <Breadcrumb className="breadCrumb d-none d-md-block">
                         <BreadcrumbItem ><Link to="/home">Home</Link></BreadcrumbItem>
                             <BreadcrumbItem active>Contact</BreadcrumbItem>
                         </Breadcrumb>
@@ -62,7 +62,7 @@ function Contact(){
                             </Form>
                         </div>
                     </div>
-        </React.Fragment>
+        </div>
     );
 }
 

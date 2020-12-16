@@ -67,7 +67,7 @@ export class Accounts extends Component {
         });
         return (
             <div className="container text-center">
-                <Breadcrumb>
+                <Breadcrumb className="breadCrumb d-none d-md-block">
                     <BreadcrumbItem><NavLink to='/home'>Home</NavLink></BreadcrumbItem>
                     <BreadcrumbItem><NavLink to='/generator'>Generator</NavLink></BreadcrumbItem>
                     <BreadcrumbItem active>Accounts</BreadcrumbItem>

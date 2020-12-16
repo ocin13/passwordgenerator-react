@@ -3,6 +3,14 @@
     color: black;
     font-size: 1.1em;
     box-shadow: 2px 2px 5px rgb(165, 163, 163);
+    border-right: 10px orangered solid;
+    transition: all ease-in-out 600ms;
+}
+.blogCard:hover{
+    background-color: rgb(241, 72, 6);
+    color: white;
+    cursor: pointer;
+    
 }
 .blogTitle{
     color: black;
@@ -17,6 +25,22 @@
 }
 .blogTitle a:hover{
     text-decoration: none;
-    color: rgb(100, 99, 99);
+    color: rgb(255, 255, 255);
 
+}
+#newBlog{
+    border-right: 10px green solid;
+}
+#newBlog:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    
+}
+.breadCrumb ol{
+    background-color: rgba(0,0, 0, 0);
+}
+.breadCrumb ol ul a{
+    color: black;
+    text-decoration: none;
 }
