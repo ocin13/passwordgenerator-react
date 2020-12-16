@@ -5,6 +5,7 @@ import Promotions from '../../component/promotions'
 import{SERVICES} from '../../shared/services';
 import './style.css';
 import {Link, NavLink} from 'react-router-dom'
+import NewsLetter from '../../component/newsletter';
 
 function Panel() {
     return (
@@ -68,6 +69,7 @@ class Home extends Component {
                     <Promotions />
                 </div>
                 <Baner />
+                <NewsLetter />
             </div>
         )
     }
